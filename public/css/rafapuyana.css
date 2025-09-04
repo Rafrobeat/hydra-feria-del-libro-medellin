@@ -1,0 +1,16 @@
+#add-icon,
+#shuffle-icon,
+#mutator-icon,
+#close-icon {
+    display: none;
+}
+
+#run-icon,
+#clear-icon {
+    opacity: 0
+}
+
+.CodeMirror-line {
+    font-family: 'Chivo' !important;
+    font-size: 5rem !important;
+}
