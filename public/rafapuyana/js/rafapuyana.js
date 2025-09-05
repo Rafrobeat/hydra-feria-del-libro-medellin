@@ -15,3 +15,6 @@ test4 = () => src(s1).out(o0);
 //shape().out(o0)
 
 // texto de prueba 2 la venganza 3 version 3
+
+// prueba final de rafa diaz
+
