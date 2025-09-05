@@ -13,3 +13,5 @@ test2 = () => src(s1).out(o0);
 test3 = () => s1.initImage("./public/rafapuyana/images/body.png")
 test4 = () => src(s1).out(o0);
 //shape().out(o0)
+
+// texto de prueba 2 la venganza
