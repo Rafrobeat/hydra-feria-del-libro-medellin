@@ -38,3 +38,16 @@ test3 = () => src(s3).out(o0);
 //s1.initImage("./public/rafapuyana/images/body.png")
 test4 = () => src(s1).out(o0);
 //shape().out(o0)
+
+// precarga otras imagenes
+function precargarImagenes() {
+    try {
+            // Precargar imagenes
+        s0.initImage("https://upload.wikimedia.org/wikipedia/commons/2/25/Hydra-Foto.jpg");
+        s1.initImage("https://upload.wikimedia.org/wikipedia/commons/2/25/Hydra-Foto.jpg");
+        s2.initImage("https://upload.wikimedia.org/wikipedia/commons/2/25/Hydra-Foto.jpg");
+        s3.initImage("https://upload.wikimedia.org/wikipedia/commons/2/25/Hydra-Foto.jpg");
+    } catch (error) {
+        console.error("Error al cargar paquete de imagenes:", error);
+    }
+}
