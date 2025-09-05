@@ -35,3 +35,10 @@
     font-family: 'Libre Baskerville' !important;
     font-size: 5rem !important;
 }
+
+.cm-comment,
+.cm-s-tomorrow-night-eighties span.cm-variable,
+.cm-s-tomorrow-night-eighties .CodeMirror-line span,
+.cm-s-tomorrow-night-eighties span.cm-number {
+    color: white !important
+}
