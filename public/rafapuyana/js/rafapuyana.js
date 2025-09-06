@@ -1,26 +1,30 @@
 // rafapuyana.js
 console.log("rafapuyana-js loaded");
 
-// Cargar Hydra para poder cargar lasd imagenes
+// Cargar Hydra para poder cargar las imagenes
 window.addEventListener('DOMContentLoaded', function() {
     // Inicializar Hydra
     const hydra = new Hydra({
         canvas: document.getElementById('hydra-canvas'),
-        // detectAudio: false,
-        // enableStreamCapture: false,
         makeGlobal: true 
     });
 
     // Esperar a que Hydra esté completamente inicializado
     setTimeout(() => {
         try {
-            // Precargar imagenes
-            s0.initImage("./public/rafapuyana/images/01.jpg");
-            s1.initImage("./public/rafapuyana/images/02.jpg");
-            s2.initImage("./public/rafapuyana/images/03.jpg");
-            s3.initImage("./public/rafapuyana/images/04.jpg");
+            // Verificar que los buffers estén definidos
+            if (typeof s0 !== 'undefined' && typeof s1 !== 'undefined' && typeof s2 !== 'undefined' && typeof s3 !== 'undefined') {
+                // Precargar imagenes
+                s0.initImage("./public/rafapuyana/images/01.jpg");
+                s1.initImage("./public/rafapuyana/images/02.jpg");
+                s2.initImage("./public/rafapuyana/images/03.jpg");
+                s3.initImage("./public/rafapuyana/images/04.jpg");
+                console.log("Imágenes precargadas correctamente");
+            } else {
+                console.error("Alguno de los buffers (s0, s1, s2, s3) no está definido");
+            }
         } catch (error) {
-            console.error("Error al cargar las imagenes:", error);
+            console.error("Error al cargar las imágenes:", error);
         }
     }, 500);
 });
