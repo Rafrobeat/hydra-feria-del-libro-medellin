@@ -2,7 +2,7 @@
 console.log("rafapuyana-js loaded");
 
 // SETUP
-Sobre_el_valor = () => s0.initImage("./public/rafapuyana/images/body.png");
+//Sobre el valor
 del_tiempo = () => src(s0).out(o3);
 
 // QUERIDO LUCILIO

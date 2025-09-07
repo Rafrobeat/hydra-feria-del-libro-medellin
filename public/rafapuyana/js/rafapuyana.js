@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function() {
     // Inicializar Hydra
     const hydra = new Hydra({
         canvas: document.getElementById('hydra-canvas'),
-        makeGlobal: true 
+        makeGlobal: true
     });
 
     // Esperar a que Hydra esté completamente inicializado
@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function() {
             // Verificar que los buffers estén definidos
             if (typeof s0 !== 'undefined' && typeof s1 !== 'undefined' && typeof s2 !== 'undefined' && typeof s3 !== 'undefined') {
                 // Precargar imagenes
-                s0.initImage("./public/rafapuyana/images/01.jpg");
+                s0.initImage("./public/rafapuyana/images/body.png");
                 s1.initImage("./public/rafapuyana/images/02.jpg");
                 s2.initImage("./public/rafapuyana/images/03.jpg");
                 s3.initImage("./public/rafapuyana/images/04.jpg");
@@ -47,7 +47,7 @@ test4 = () => src(s1).out(o0);
 function precargarImagenes() {
     try {
             // Precargar imagenes
-            s0.initImage("./public/rafapuyana/images/05.jpg");
+            s0.initImage("./public/rafapuyana/images/body.png");
             s1.initImage("./public/rafapuyana/images/06.jpg");
             s2.initImage("./public/rafapuyana/images/07.jpg");
             s3.initImage("./public/rafapuyana/images/08.jpg");
