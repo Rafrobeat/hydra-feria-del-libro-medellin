@@ -30,17 +30,17 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 // Frases personalizadas
-querido = () => osc().out();
-lucilio = () => osc().kaleid().out();
-queridoLucilio = () => osc(1,1,1).kaleid().out();
+// querido = () => osc().out();
+// lucilio = () => osc().kaleid().out();
+// queridoLucilio = () => osc(1,1,1).kaleid().out();
 
-test0 = () => src(s0).out(o0);
-test1 = () => src(s1).out(o0);
-test2 = () => src(s2).out(o0);
-test3 = () => src(s3).out(o0);
+// test0 = () => src(s0).out(o0);
+// test1 = () => src(s1).out(o0);
+// test2 = () => src(s2).out(o0);
+// test3 = () => src(s3).out(o0);
 
 //s1.initImage("./public/rafapuyana/images/body.png")
-test4 = () => src(s1).out(o0);
+// test4 = () => src(s1).out(o0);
 //shape().out(o0)
 
 // precarga otras imagenes
