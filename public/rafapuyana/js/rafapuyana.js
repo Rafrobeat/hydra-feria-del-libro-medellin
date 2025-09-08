@@ -16,8 +16,8 @@ window.addEventListener('DOMContentLoaded', function() {
             if (typeof s0 !== 'undefined' && typeof s1 !== 'undefined' && typeof s2 !== 'undefined' && typeof s3 !== 'undefined') {
                 // Precargar imagenes
                 s0.initImage("./public/rafapuyana/images/body.png");
-                s1.initImage("./public/rafapuyana/images/02.jpg");
-                s2.initImage("./public/rafapuyana/images/03.jpg");
+                s1.initImage("./public/rafapuyana/images/morin.png");
+                s2.initImage("./public/rafapuyana/images/morin-2.png");
                 s3.initImage("./public/rafapuyana/images/04.jpg");
                 console.log("Imágenes precargadas correctamente");
             } else {
