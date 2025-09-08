@@ -1,7 +1,16 @@
 // VIRTUD.js
 // Para correr este codigo hay que inicializar con:
 
-
+// Habitar()
+//
+// la_complejidad()
+//
+//  Los_7_saberes()
+//  necesarios()
+//  para_la_educación()
+// // del futuro
+//
+// el_error()
 
 // SETUP
 Sobre_el_valor = () => console.log("hello");
