@@ -1,5 +1,7 @@
 // VIRTUD.js
-console.log("rafapuyana-js loaded");
+// Sobre()
+// el_valor()
+// del_tiempo()
 
 // SETUP
 Sobre = () => setFunction({

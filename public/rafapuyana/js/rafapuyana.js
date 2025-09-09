@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', function() {
 //shape().out(o0)
 
 // precarga otras imagenes
-function precargarImagenes() {
+function imgsVirtud() {
     try {
             // Precargar imagenes
             s0.initImage("./public/rafapuyana/images/body.png");
