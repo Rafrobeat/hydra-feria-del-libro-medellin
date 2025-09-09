@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', function() {
             // Verificar que los buffers estén definidos
             if (typeof s0 !== 'undefined' && typeof s1 !== 'undefined' && typeof s2 !== 'undefined' && typeof s3 !== 'undefined') {
                 // Precargar imagenes
-                s0.initImage("./public/rafapuyana/images/body.png");
+                s0.initImage("./public/rafapuyana/images/body.png"); // Cuerpo humano para virtud
                 s1.initImage("./public/rafapuyana/images/morin.png");
                 s2.initImage("./public/rafapuyana/images/morin-2.png");
                 s3.initImage("./public/rafapuyana/images/04.jpg");
