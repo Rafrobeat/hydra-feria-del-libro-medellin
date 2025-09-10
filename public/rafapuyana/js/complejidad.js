@@ -56,3 +56,26 @@ src(o0)
 //.blend(o0,.9)
 //.modulate(o0,.001)
 .out(o0);
+
+el_error_2 = () => osc(9).out();
+
+Ceguera = () => osc().out();
+
+Conocimiento = () => osc(2).out();
+
+
+Ilusión = () => osc(6).out();
+
+Educación = () => osc().out();
+
+Futuro = () => osc(7).out();
+
+Riesgo = () => osc().out();
+
+Problema = () => osc(3).out();
+
+Reconocimiento = () => osc(8).out();
+
+Subestimación = () => osc(8).out();
+
+Dificultad = () => osc(8).out();
