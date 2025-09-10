@@ -16,9 +16,9 @@ window.addEventListener('DOMContentLoaded', function() {
             if (typeof s0 !== 'undefined' && typeof s1 !== 'undefined' && typeof s2 !== 'undefined' && typeof s3 !== 'undefined') {
                 // Precargar imagenes
                 s0.initImage("./public/rafapuyana/images/body.png"); // Cuerpo humano para virtud
-                s1.initImage("./public/rafapuyana/images/morin.png");
-                s2.initImage("./public/rafapuyana/images/body.png");
-                s3.initImage("./public/rafapuyana/images/body.png");
+                s1.initImage("./public/rafapuyana/images/complejidad/complejidad-01.png");
+                s2.initImage("./public/rafapuyana/images/complejidad/complejidad-02.png");
+                s3.initImage("./public/rafapuyana/images/complejidad/complejidad-03.png");
                 console.log("Imágenes precargadas correctamente");
             } else {
                 console.error("Alguno de los buffers (s0, s1, s2, s3) no está definido");
