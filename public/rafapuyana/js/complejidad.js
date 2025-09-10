@@ -16,7 +16,7 @@ Habitar = () => setFunction({name: 'chroma',type: 'color',inputs: [],glsl:`float
 la_complejidad = () => setResolution(1440,900);
 
 // TITULO
-Los_7 = () =>
+Los_siete = () =>
   src(s1)
   //.scale(1,.4)
   .chroma().out(o1);
