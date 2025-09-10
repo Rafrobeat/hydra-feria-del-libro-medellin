@@ -17,8 +17,8 @@ window.addEventListener('DOMContentLoaded', function() {
                 // Precargar imagenes
                 s0.initImage("./public/rafapuyana/images/body.png"); // Cuerpo humano para virtud
                 s1.initImage("./public/rafapuyana/images/morin.png");
-                s2.initImage("./public/rafapuyana/images/morin-2.png");
-                s3.initImage("./public/rafapuyana/images/04.jpg");
+                s2.initImage("./public/rafapuyana/images/body.png");
+                s3.initImage("./public/rafapuyana/images/body.png");
                 console.log("Imágenes precargadas correctamente");
             } else {
                 console.error("Alguno de los buffers (s0, s1, s2, s3) no está definido");
@@ -48,9 +48,9 @@ function imgsVirtud() {
     try {
             // Precargar imagenes
             s0.initImage("./public/rafapuyana/images/body.png");
-            s1.initImage("./public/rafapuyana/images/06.jpg");
-            s2.initImage("./public/rafapuyana/images/07.jpg");
-            s3.initImage("./public/rafapuyana/images/08.jpg");
+            s1.initImage("./public/rafapuyana/images/body.png");
+            s2.initImage("./public/rafapuyana/images/body.png");
+            s3.initImage("./public/rafapuyana/images/body.png");
     } catch (error) {
         console.error("Error al cargar paquete de imagenes:", error);
     }
