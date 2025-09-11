@@ -29,33 +29,38 @@ window.addEventListener('DOMContentLoaded', function() {
     }, 500);
 });
 
-// Frases personalizadas
-// querido = () => osc().out();
-// lucilio = () => osc().kaleid().out();
-// queridoLucilio = () => osc(1,1,1).kaleid().out();
 
-// test0 = () => src(s0).out(o0);
-// test1 = () => src(s1).out(o0);
-// test2 = () => src(s2).out(o0);
-// test3 = () => src(s3).out(o0);
-
-//s1.initImage("./public/rafapuyana/images/body.png")
-// test4 = () => src(s1).out(o0);
-//shape().out(o0)
 
 // precarga otras imagenes
-function imgsVirtud() {
+function imgsComplejidad() {
     try {
             // Limpiar buffers
-            solid().out(o0);
-            solid().out(o1);
-            solid().out(o2);
-            solid().out(o3);      
+            // solid().out(o0);
+            // solid().out(o1);
+            // solid().out(o2);
+            // solid().out(o3);
             // Precargar imagenes
-            s0.initImage("./public/rafapuyana/images/body.png");
-            s1.initImage("./public/rafapuyana/images/body.png");
-            s2.initImage("./public/rafapuyana/images/body.png");
-            s3.initImage("./public/rafapuyana/images/body.png");
+            s0.initImage("./public/rafapuyana/images/complejidad/complejidad-04.png");
+            s1.initImage("./public/rafapuyana/images/complejidad/complejidad-05.png");
+            s2.initImage("./public/rafapuyana/images/complejidad/complejidad-06.png");
+            s3.initImage("./public/rafapuyana/images/complejidad/complejidad-07.png");
+    } catch (error) {
+        console.error("Error al cargar paquete de imagenes:", error);
+    }
+};
+
+function imgsComplejidad2() {
+    try {
+            // Limpiar buffers
+            // solid().out(o0);
+            // solid().out(o1);
+            // solid().out(o2);
+            // solid().out(o3);
+            // Precargar imagenes
+            s0.initImage("./public/rafapuyana/images/complejidad/complejidad-01.png");
+            s1.initImage("./public/rafapuyana/images/complejidad/complejidad-02.png");
+            s2.initImage("./public/rafapuyana/images/complejidad/complejidad-03.png");
+            s3.initImage("./public/rafapuyana/images/complejidad/complejidad-04.png");
     } catch (error) {
         console.error("Error al cargar paquete de imagenes:", error);
     }
@@ -78,3 +83,17 @@ function imgsDemocracia() {
         console.error("Error al cargar paquete de imagenes:", error);
     }
 };
+
+// Frases personalizadas
+// querido = () => osc().out();
+// lucilio = () => osc().kaleid().out();
+// queridoLucilio = () => osc(1,1,1).kaleid().out();
+
+// test0 = () => src(s0).out(o0);
+// test1 = () => src(s1).out(o0);
+// test2 = () => src(s2).out(o0);
+// test3 = () => src(s3).out(o0);
+
+//s1.initImage("./public/rafapuyana/images/body.png")
+// test4 = () => src(s1).out(o0);
+//shape().out(o0)

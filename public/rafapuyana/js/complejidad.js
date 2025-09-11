@@ -43,7 +43,7 @@ src(o0)
 .out(o0)
 
 // ERROR
-el_error = () =>
+error_ = () =>
 src(o0)
 //.layer(solid(1,.71,.047)) // Solido - comenta para inicio
 .layer(src(o1).scrollX(0,1e-2).modulate(osc(10/2,.1,2),0)) // primer texto ( cambia o1,o2,o3 ) // modulate cambia
@@ -57,12 +57,82 @@ src(o0)
 //.modulate(o0,.001)
 .out(o0);
 
-el_error_2 = () => osc(9).out();
+ilusión_ = () =>
+src(o0)
+//.layer(solid(1,.71,.047)) // Solido - comenta para inicio
+.layer(src(o2).scrollX(0,1e-2).modulate(osc(10/2,.1,2),0)) // primer texto ( cambia o1,o2,o3 ) // modulate cambia
+//
+//  .layer(osc(1,1,.21).kaleid().mask(shape(30,[.2,.1,.4,.3],.0))) // circulo
+//.layer(solid(1,.18,0).brightness([1,2].smooth()).mask(src(o1).invert([1]).scrollX(0,1/100).scrollY(0,1/100)))
+  .scale(1+1e-3) // e-3 / e-2
+  .rotate(0+1e-3) //  0+1e-3 / 0+1e-4
+  .rotate(0+1e-3) //  rotacion adicional
+//.blend(o0,.9)
+//.modulate(o0,.001)
+.out(o0);
+
+error_e_ilusión_ = () => imgsComplejidad();
+error_e_ilusión__ = () => imgsComplejidad();
+
+error__ = () =>
+src(o0)
+//.layer(solid(1,.71,.047)) // Solido - comenta para inicio
+.layer(src(o3).scrollX(0,1e-2).modulate(osc(10/2,.1,2),0)) // primer texto ( cambia o1,o2,o3 ) // modulate cambia
+//
+  //.layer(osc(1,1,.21).kaleid().mask(shape(30,[.2,.1,.4,.3],.0))) // circulo
+//.layer(solid(1,.18,0).brightness([1,2].smooth()).mask(src(o1).invert([1]).scrollX(0,1/100).scrollY(0,1/100)))
+  .scale(1+1e-3) // e-3 / e-2
+  .rotate(0-1e-3) //  0+1e-3 / 0+1e-4
+  .rotate(0-1e-3) //  rotacion adicional
+//.blend(o0,.9)
+//.modulate(o0,.001)
+.out(o0);
+
+ilusión__ = () =>
+src(o0)
+//.layer(solid(1,.71,.047)) // Solido - comenta para inicio
+.layer(src(o2).scrollX(0,1e-2).modulate(osc(10/2,.1,2),0)) // primer texto ( cambia o1,o2,o3 ) // modulate cambia
+//
+//  .layer(osc(1,1,.21).kaleid().mask(shape(30,[.2,.1,.4,.3],.0))) // circulo
+//.layer(solid(1,.18,0).brightness([1,2].smooth()).mask(src(o1).invert([1]).scrollX(0,1/100).scrollY(0,1/100)))
+  .scale(1+1e-3) // e-3 / e-2
+  .rotate(0+1e-3) //  0+1e-3 / 0+1e-4
+  .rotate(0+1e-3) //  rotacion adicional
+.blend(o0,.9)
+//.modulate(o0,.001)
+.out(o0);
+
+error___ = () =>
+src(o0)
+//.layer(solid(1,.71,.047)) // Solido - comenta para inicio
+.layer(src(o0).scrollX(0,1e-2).modulate(osc(10/2,.1,2),0)) // primer texto ( cambia o1,o2,o3 ) // modulate cambia
+//
+//  .layer(osc(1,1,.21).kaleid().mask(shape(30,[.2,.1,.4,.3],.0))) // circulo
+//.layer(solid(1,.18,0).brightness([1,2].smooth()).mask(src(o1).invert([1]).scrollX(0,1/100).scrollY(0,1/100)))
+  .scale(1+1e-3) // e-3 / e-2
+  .rotate(0-1e-3) //  0+1e-3 / 0+1e-4
+  .rotate(0-1e-3) //  rotacion adicional
+.blend(o0,.9)
+.modulate(o0,.001)
+.out(o0);
+
+ilusión___ = () =>
+src(o0)
+//.layer(solid(1,.71,.047)) // Solido - comenta para inicio
+.layer(src(o3).scrollX(0,1e-2).modulate(osc(10/2,.1,2),0)) // primer texto ( cambia o1,o2,o3 ) // modulate cambia
+//
+//  .layer(osc(1,1,.21).kaleid().mask(shape(30,[.2,.1,.4,.3],.0))) // circulo
+//.layer(solid(1,.18,0).brightness([1,2].smooth()).mask(src(o1).invert([1]).scrollX(0,1/100).scrollY(0,1/100)))
+  .scale(1+1e-3) // e-3 / e-2
+  .rotate(0-1e-3) //  0+1e-3 / 0+1e-4
+  .rotate(0-1e-3) //  rotacion adicional
+.blend(o0,.9)
+.modulate(o0,.001)
+.out(o0);
 
 Ceguera = () => osc().out();
 
 Conocimiento = () => osc(2).out();
-
 
 Ilusión = () => osc(6).out();
 
