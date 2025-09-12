@@ -72,7 +72,7 @@ src(o0)
 .out(o0);
 
 error_e_ilusión_ = () => imgsComplejidad();
-error_e_ilusión__ = () => imgsComplejidad();
+error_e_ilusión__ = () => imgsComplejidad2();
 
 error__ = () =>
 src(o0)

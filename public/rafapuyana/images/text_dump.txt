@@ -1,35 +1,5 @@
-await loadScript("./public/rafapuyana/js/hydra-blend.js")
-
-s1.initImage("https://raw.githubusercontent.com/Rafrobeat/hydra-feria-del-libro-medellin/refs/heads/main/public/rafapuyana/images/democracia.png")
-
-setResolution(1440*2,900*2)
-
-src(s1)
-.scale(innerWidth/innerHeight/1.8)
-.out(o3)
-
-
-solid()
-  .add(
-  src(o3)
-	.modulate(osc(10,.1/2),.1/2) // Arranca en .1/2 > .1/6
-)
-.blend(src(o0).modulate(noise(1)),[.3,.3].smooth()) // arranca en .3 termina en 0
-. modulateScale(o0,[9,9].ease("sin"),1) // arranca en [9,9] y se va pasando a [9,9] , [0,0]
-.saturate(1.2) // arranca en 1.2
- .softLight(src(o0))
-.modulate(noise(1000,1),[.1,.1].smooth()) // #1 cambia de [.1,.1] a [.0,.0]
-.blend(o0,.9)
+src(s0)
+  .scale(1,[1.01,1].smooth(.2),.99,3,.7)
+  .blend(o0,.9)
+  .modulate(o0,.0001)
   .out()
-
-
-
-
-
-
-
-////
-s2.initScreen()
-src(s2).out(o1)
-hush()
-render(o0)

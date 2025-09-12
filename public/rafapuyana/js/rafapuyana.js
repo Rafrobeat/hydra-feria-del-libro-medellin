@@ -66,19 +66,25 @@ function imgsComplejidad2() {
     }
 };
 
-function imgsDemocracia() {
+function imgsDemocracia_() {
     try {
             // Limpiar buffers
-            solid().out(o0);
-            solid().out(o1);
-            solid().out(o2);
-            solid().out(o3);
+            // solid().out(o0);
+            // solid().out(o1);
+            // solid().out(o2);
+            // solid().out(o3);
 
             // Precargar imagenes
             s0.initImage("./public/rafapuyana/images/democracia/democracia-01.png");
-            s1.initImage("./public/rafapuyana/images/democracia/democracia-02.png");
-            s2.initImage("./public/rafapuyana/images/democracia/democracia-03.png");
-            s3.initImage("./public/rafapuyana/images/democracia/democracia-04.png");
+            s1.initImage("./public/rafapuyana/images/democracia/democracia-01.png");
+            s2.initImage("./public/rafapuyana/images/democracia/democracia-02.png");
+            s3.initImage("./public/rafapuyana/images/democracia/democracia-03.png");
+
+            //asignar buffers
+            src(s1).out(o1);
+            src(s2).out(o2);
+            src(s3).out(o3);
+
     } catch (error) {
         console.error("Error al cargar paquete de imagenes:", error);
     }

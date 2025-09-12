@@ -54,86 +54,43 @@ ilusión___()
 error_e_ilusión__()
 
 
-src(o0)
-//.layer(solid(1,.71,.047)) // Solido - comenta para inicio
-.layer(src(o1).scrollX(0,1e-2).modulate(osc(10/2,.1,2),0)) // primer texto ( cambia o1,o2,o3 ) // modulate cambia
-//
-//  .layer(osc(1,1,.21).kaleid().mask(shape(30,[.2,.1,.4,.3],.0))) // circulo
-//.layer(solid(1,.18,0).brightness([1,2].smooth()).mask(src(o1).invert([1]).scrollX(0,1/100).scrollY(0,1/100)))
-  .scale(1+1e-3) // e-3 / e-2
-  .rotate(0+1e-3) //  0+1e-3 / 0+1e-4
-//  .rotate(0+1e-3) //  rotacion adicional
-//.blend(o0,.9)
-//.modulate(o0,.001)
-.out(o0);
 
 
 -------------------------------------------
 
 
-Habitar_la()
-Democracia()
-Denis_Diderot()
-
-Optimismo()
+Habitar_la_Democracia()
 
 
-filosofía()
-  solid()
-    .add(
-    		src(o3).modulate(osc(10,.1/4)) // Arranca en .1/2 > .1/6
-    )
-    .mult(
-    		src(o2).modulate(osc(10,-.1/4)) // Arranca en .1/2 > .1/6
-    )
-  .blend(src(o0).modulate(noise(1)),[.3,.3].smooth()) // arranca en .3 termina en 0
-  .modulateScale(src(o0),[9,.50].ease("sin"),1) // arranca en [9,9] y se va pasando a [9,9] , [0,0]
-  .blend(src(o0),.8)
-  .contrast(1.0001)
-.modulate(noise(1000,1),[.1,.1].smooth()) // #1 cambia de [.1,.1] a [.0,.0]
-  //.scale(1.01)
-  .out();
+
+optimismo()
+
+filósofos()
+
+El mejor de los mundos posibles
+
+teodicea()
+
+el_crimen()
+
+libertad()
+
+¿cómo conciliar este optimismo con la libertad de Dios?
+
+¿Cómo es que tantos hombres son asesinados en el mejor de los mundos
+
+posibles() 
 
 
-// Función General
+o_altitudo()
 
-  solid()
-    .add(
-    		src(o3).modulate(osc(10,.1/4)) // Arranca en .1/2 > .1/6
-    )
-    .mult(
-    		src(o2).modulate(osc(10,-.1/4)) // Arranca en .1/2 > .1/6
-    )
-  .blend(src(o0).modulate(noise(1)),[.3,.3].smooth()) // arranca en .3 termina en 0
-  .modulateScale(src(o0),[9,.50].ease("sin"),1) // arranca en [9,9] y se va pasando a [9,9] , [0,0]
-  .blend(src(o0),.8)
-  .contrast(1.0001)
-.modulate(noise(1000,1),[.1,.1].smooth()) // #1 cambia de [.1,.1] a [.0,.0]
-  //.scale(1.01)
-  .out();
+
+
+
 
 
 // ---------------
 
-Optimismo()
+Habitar_las()
 
-Ceguera();
-
-Conocimiento();
-
-
-Ilusión();
-
-Educación();
-
-Futuro();
-
-Riesgo();
-
-Problema();
-
-Reconocimiento();
-
-Subestimación();
-
-Dificultad();
+Contradicciones()
