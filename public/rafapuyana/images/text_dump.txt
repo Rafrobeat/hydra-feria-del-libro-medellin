@@ -1,5 +1,47 @@
+Cándido
+   Cá
+Westfalia
+			ánimo. espíritu simple
+un muchacho
+
+
+
+
+
+
+
+
+
+
+
+
+s0.initCam(1)
+
+
+// Try ONE
+solid()
+.color(0,.271,.0031)
+.add(src(s0)
+	.scale(1,[1.001,1].smooth(.2),.99,3,.7)
+	//.blend(o0,.9)
+	.modulate(o0,.0001)
+)
+.out()
+
+
+
+// Try TWO
 src(s0)
-  .scale(1,[1.01,1].smooth(.2),.99,3,.7)
-  .blend(o0,.9)
-  .modulate(o0,.0001)
-  .out()
+	.modulateHue(osc(.01,.01,.01),1000)
+	.modulateScale(noise(.1,.1),.1)
+	.blend(solid(0, 0.278, 0.031),0)
+	.scale(1,[1.001,1].smooth(.2),.99,3,.7)
+	//.blend(o0,.9)
+	.modulate(o0,.0001)
+.out()
+
+
+s0.initScreen()
+
+
+solid().out()

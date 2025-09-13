@@ -75,6 +75,8 @@ el_crimen()
 
 libertad()
 
+virtudes()
+
 ¿cómo conciliar este optimismo con la libertad de Dios?
 
 ¿Cómo es que tantos hombres son asesinados en el mejor de los mundos

@@ -18,10 +18,10 @@ Habitar_la_Democracia = () => imgsDemocracia_();
 Democracia = (out = o0, out2 = o1) =>
 solid()
   .add(
-      src(o3).modulate(osc(10,.1/4)) // Arranca en .1/2 > .1/6
+      src(out).modulate(osc(10,.1/4)) // Arranca en .1/2 > .1/6
   )
   .mult(
-      src(o2).modulate(osc(10,-.1/4)) // Arranca en .1/2 > .1/6
+      src(out2).modulate(osc(10,-.1/4)) // Arranca en .1/2 > .1/6
   )
 .blend(src(o0).modulate(noise(1)),[.3,.3].smooth()) // arranca en .3 termina en 0
 .modulateScale(src(o0),[9,.50].ease("sin"),1) // arranca en [9,9] y se va pasando a [9,9] , [0,0]
@@ -43,7 +43,7 @@ optimismo = (out = o0, out2 = o1)=>
   .modulateScale(src(o0),[9,9].ease("sin"),1) // arranca en [9,9] y se va pasando a [9,9] , [0,0]
   .blend(src(o0),.9)
   .contrast(1.0001)
-.out()
+.out();
 
 
 filósofos = (out = o2, out2 = o3) =>
@@ -90,13 +90,13 @@ el_crimen = (out = o2, out2 = o1) =>
   .out();
 
 
-libertad = (out = o2, out2 = o1) =>
+libertad = (out = o3, out2 = o1) =>
 solid()
   .add(
-      src(o3).modulate(osc(10,.1/4)) // Arranca en .1/2 > .1/6
+      src(out).modulate(osc(10,.1/4)) // Arranca en .1/2 > .1/6
   )
   .mult(
-      src(o2).modulate(osc(10,-.1/4)) // Arranca en .1/2 > .1/6
+      src(out2).modulate(osc(10,-.1/4)) // Arranca en .1/2 > .1/6
   )
 //  .blend(src(o0).modulate(noise(1)),[.3,.3].smooth()) // arranca en .3 termina en 0
 .modulateScale(src(o0),[0,1].ease("sin"),1) // arranca en [9,9] y se va pasando a [9,9] , [0,0]
@@ -106,44 +106,47 @@ solid()
 //.scale(1.01)
 .out();
 
-virtudes = (out = o2, out2 = o1) =>
+virtudes = (out = o1, out2 = o2) =>
 solid()
   .add(
-      src(o3).modulate(osc(10,.1/4)) // Arranca en .1/2 > .1/6
+      src(out).modulate(osc(10,.1/4)) // Arranca en .1/2 > .1/6
   )
   .mult(
-      src(o2).modulate(osc(10,-.1/4)) // Arranca en .1/2 > .1/6
+      src(out2).modulate(osc(10,-.1/4)) // Arranca en .1/2 > .1/6
   )
 //  .blend(src(o0).modulate(noise(1)),[.3,.3].smooth()) // arranca en .3 termina en 0
 .modulateScale(src(o0),[0,1].ease("sin"),1) // arranca en [9,9] y se va pasando a [9,9] , [0,0]
 .blend(src(o0),.8)
-.contrast(1.0001)
+.contrast(1.0002)
 //.modulate(noise(1000,1),[.1,.1].smooth()) // #1 cambia de [.1,.1] a [.0,.0]
 //.scale(1.01)
 .out();
 
-posibles = (out = o2, out2 = o1) =>
+posibles = (out = o1, out2 = o3) =>
   solid()
-    .add( src(o3).modulate( osc(12, .1/5) ) )         // freq up, slower drift
-    .mult( src(o2).modulate( noise(2, -.1/4) ) )      // higher noise freq
-    .blend( src(o0).modulate( noise(1) ), [0.25,0.25].smooth() )
-    .modulateScale( src(o0), [0,1].ease("sin"), 0.9 ) // slightly gentler scale
-    .blend( src(o0), 0.7 )                            // lighter blend
-    .contrast(1.0001)
-    .scale(1.02)
-    .out()
+    .add(
+        src(out).modulate(osc(10,.1/6)) // Arranca en .1/2 > .1/6
+    )
+    .mult(
+        src(out2).modulate(osc(10,-.1/2)) // Arranca en .1/2 > .1/6
+    )
+  .blend(src(out2).modulate(noise(1)),[.3,.3].smooth(),0) // arranca en .3 termina en 0
+  .modulateScale(src(o0),[9,9].ease("sin"),1) // arranca en [9,9] y se va pasando a [9,9] , [0,0]
+  .blend(src(o0),.9)
+  .contrast(1.0001)
+  .out();
 
 
-o_altitudo = (out = o2, out2 = o1) =>
+o_altitudo = (out = o3, out2 = o2) =>
 solid()
-  .add( src(o3).modulate( osc(12, .1/5) ) )         // freq up, slower drift
-  .mult( src(o2).modulate( noise(2, -.1/4) ) )      // higher noise freq
+  .add( src(out).modulate( osc(12, .1/5) ) )         // freq up, slower drift
+  .mult( src(out2).modulate( noise(2, -.1/4) ) )      // higher noise freq
   .blend( src(o0).modulate( noise(1) ), [0.25,0.25].smooth() )
   .modulateScale( src(o0), [0,1].ease("sin"), 0.9 ) // slightly gentler scale
   .blend( src(o0), 0.7 )                            // lighter blend
   .contrast(1.0001)
-  .scale(1.02)    
-  .out()
+  .scale(1.02)
+  .out();
 
 
 Leibnitz = () => osc(57).out();
